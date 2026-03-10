@@ -1,0 +1,36 @@
+{
+    "name": "psc-acme/worker-payment",
+    "description": "Package worker-payment for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WorkerPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/messenger": "^7.0",
+        "symfony/filesystem": "^7.0"
+    },
+    "require-dev": {
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
